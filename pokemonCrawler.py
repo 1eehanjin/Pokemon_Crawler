@@ -52,4 +52,46 @@ class Macro:
 macro = Macro()
 macro.waitNewPage()
 macro.loadUrl('https://pokemon.fandom.com/ko/wiki/%EC%9D%B4%EC%83%81%ED%95%B4%EC%94%A8_(%ED%8F%AC%EC%BC%93%EB%AA%AC)', '이상해씨')
+
+#포켓몬 이름
 print(macro.crawlByXpath('//*[@id="mw-content-text"]/div/div[1]/div[1]/div[1]/div[1]/strong'))              
+
+#속성1
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[2]/td[1]/div/span/a[1]/span'))
+#속성2
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[2]/td[1]/div/span/a[2]/span'))
+
+#분류
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[2]/td[2]'))
+
+
+#도감번호 TODO: 도감 제목과 번호 분리
+#관동
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[7]/td/table/tbody/tr[2]/td[1]'))
+#성도
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[7]/td/table/tbody/tr[2]/td[2]'))
+#호연
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[7]/td/table/tbody/tr[2]/td[3]'))
+#칼로스
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[7]/td/table/tbody/tr[3]/td[1]'))
+#가라르 TODO: 코스트/센트럴/마운틴 도감 분류
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[7]/td/table/tbody/tr[3]/td[2]'))
+
+#도감 색 TODO: 색상코드 가져오기
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[11]/td[1]'))
+
+#기초 친밀도
+print(macro.crawlByXpath('/html/body/div[4]/div[3]/div[5]/main/div[3]/div[1]/div/div[1]/table/tbody/tr[11]/td[2]'))
+
+#키
+
+#몸무게
+
+#포획률
+
+#성비
+
+#알그룹
+
+#부화걸음수
+
